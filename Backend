@@ -4,7 +4,7 @@ import cgitb
 cgitb.enable(display=0, logdir="/path/to/logdir")
 form = cgi.FieldStorage()
 
-
+#Fill in the parameter as what the HTML names of inputs are
 hours = form.getvalue('Hours out and about')
 hours_masks = form.getvalue('Hours wearing a mask')
 overall_Health = form.getvalue('Overall health')
@@ -12,6 +12,10 @@ overall_Health = form.getvalue('Overall health')
 print("Content-Type: text/html")    # HTML is following
 print()                             # blank line, end of headers
 
+
+
+
+#Do the calculations here
 print("<TITLE>CGI script Output</TITLE>")
 print("<H1>This is the COVID-19 TRACKER</H1>")
 print("*CALCULATIONS & RESULTS*")
