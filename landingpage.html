@@ -13,16 +13,38 @@
     <div class="container">
         <form id="contact" action="" method="post">
             <h3>Coivd Tracker</h3>
-            <h4>Enter the information and find out your risk of contracting covid-19</h4>
+            <h4>Find out your risk of contracting Covid-19.
+                <br> Answer to the best of your ability.
+            </h4>
+
+            <label for="age"><b>Age</b></label>
             <fieldset>
-                <input placeholder="Hours out and about" type="text" tabindex="1" required autofocus>
+                <input placeholder="" type="text" tabindex="1" required autofocus>
             </fieldset>
+
+            <label for="hoursOut"><b>Amount of hours outside residence</b></label>
             <fieldset>
-                <input placeholder="YHours wearing a mask" type="text" tabindex="2" required>
+                <input placeholder="" type="text" tabindex="1" required autofocus>
             </fieldset>
+
+            <label for="hoursMask"><b>Amount of hours wearing mask outside residence</b></label>
             <fieldset>
-                <input placeholder="Overall health" type="text" tabindex="3" required>
+                <input placeholder="" type="text" tabindex="2" required>
             </fieldset>
+
+
+            <label for="cars">Health conditions:</label>
+
+            <select name="Conditions" id="healthConditions" multiple>
+                <option value="none">None</option>
+                <option value="diabetes">Diabetes</option>
+                <option value="asthma">Asthma</option>
+                <option value="chronicLungDisease">Chronic Lung Disease</option>
+                <option value="hemoglobinDisorders">Hemoglobin Disorders</option>
+                <option value="liverDisease">Liver Disease</option>
+            </select>
+
+
             <fieldset>
                 <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
             </fieldset>
