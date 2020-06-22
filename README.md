@@ -1,5 +1,6 @@
 # Covid-Tracker
 Covid-Tracker based on input data
+
 How to run:
 Dependencies - Flask, python environment
 1.Download Files 
